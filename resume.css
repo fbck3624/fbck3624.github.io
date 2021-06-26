@@ -1,0 +1,161 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd,
+fieldset, form, label, legend,
+ caption, tbody, tfoot, thead,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* 導覽列 */
+.nav{
+    width: 100%;
+    height: 90px;
+    position: fixed;
+    background-color: #d0d0d000;
+    z-index: 9999;
+    /* opacity: 70%; */
+}
+  .logo{
+    float: left;
+    display: flex;
+}
+.logo img{
+    margin-left: 20px;
+    margin-top: 10px;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+}
+.logo p{
+    margin-left: 10px;
+    margin-top: 25px;
+    margin-right: 700px;
+    font-size: 30px;
+    font-family:Comic Sans MS;
+}
+  .hamburger {
+    background: rgba(0,0,0,.3);
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 20px;
+    left: 80%;
+    display: block;
+  }
+  .hamburger-line {
+    width: 40px;
+    height: 3px;
+    background-color: #ffffff;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 0px 10px 0px #ffffff, 0px -10px 0px #ffffff;
+  }
+  .menu {
+    list-style-type:none;
+    background: rgb(212, 212, 212,.8);
+    height: 100vh;
+    width: 70%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    
+  }
+  .menu li a {
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    margin: 15px 10px 10px;
+    font-size: 20px;
+    font-family:Comic Sans MS;
+    list-style: none;
+    color: #000;
+   
+  }
+  .menu li a:hover{
+      color: rgb(238, 238, 238);
+  }
+  .menu {
+
+    transform: translateX(-120%);
+    transition: 0.5s; /* new */
+  }
+  #menu-switcher:checked ~ .menu {
+    transform: translateX(0%);
+  }
+  #menu-switcher {
+    display: none;
+  }
+  @media screen and (min-width: 768px) {
+    .hamburger {
+      display: none;
+    }
+  .logo{
+      float: left;
+      display: flex;
+  }
+  .logo img{
+      margin-left: 130px;
+      margin-top: 10px;
+      width:70px;
+      height:70px;
+      border-radius: 50%;
+  }
+  .logo p{
+      margin-left: 30px;
+      margin-top: 25px;
+      margin-right: 700px;
+      font-size: 30px;
+      font-family:Comic Sans MS;
+      
+  }
+  }
+  @media screen and (min-width: 768px) {
+   
+    .hamburger {
+      display: none;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+    }
+    .menu {
+      list-style-type:none;
+      transform: translateX(0%);
+      height: auto;
+      width: auto;
+      display: flex;
+      position: relative;
+      background-color: transparent;
+    }
+  }
+/* 導覽列 */
+/* 圖片 */
+.bigimg{
+    background:url(img/IMG_0152.JPG);
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+/* 圖片 */
+.ss{
+    width:100%;
+    height: 900px;
+}
