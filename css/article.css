@@ -1,0 +1,150 @@
+body {
+    width: 100%;
+}
+body:before,
+body:after {
+    content: "";
+    display: table;
+}
+body:after {
+    clear: both;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center; /* 將內容置於畫面的中間 */
+    min-height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.main {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    background-color: white;
+    display: block;
+}
+.type{
+    width: 15%;
+    height: 400px;
+    background-color: white;
+    border-radius: 10px;
+    margin-right: 1%;
+}
+.title{
+    font-size: 50px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+.created{
+    font-size: 15px;
+    color: rgb(170, 171, 171);
+    margin-left: 5%;
+}
+.img{
+    width: 80%;
+    height: 400px;
+    margin-left: 10%;
+}
+.article-content{
+    padding-top: 3%;
+    margin-left: 5%;
+    height: 30%;
+    width: 90%;
+    word-wrap: break-word;
+    font-family: 'Verdana', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+}
+
+@media screen and (max-width: 768px) {
+    .main{
+      width: 80%;
+    }
+    .type{
+        display: none;
+    }
+    .content{
+      margin-top: 5%;
+    }
+  }
+  @media screen and (min-width: 769px) and (max-width: 1200px) {
+    .main{
+      width: 80%;
+    }
+    .content{
+      margin-top: 5%;
+    }
+  }

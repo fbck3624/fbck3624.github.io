@@ -1,0 +1,363 @@
+body {
+  width: 100%;
+}
+body:before,
+body:after {
+  content: "";
+  display: table;
+}
+body:after {
+  clear: both;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+body{
+  display: block;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  align-items: center; /* 將內容置於畫面的中間 */
+  min-height: 100vh;
+  background-image: url(images/background.jpg);
+  background-size: cover;
+}
+.content {
+  display: flex;
+  justify-content: center;
+  margin-top: 1%;
+}
+.main {
+  width: 70%;
+  height: auto;
+  display: flex;
+}
+.item{
+  width: 70%;
+  height: 100%;
+}
+.post-item{
+  background-color: rgb(255, 255, 255);
+  width: 95%;
+  height: 550px;
+  margin: 10px;
+  border-radius: 10px;
+  display: block;
+}
+.column{
+  width: 25%;
+  height: 100%;
+}
+.img-card{
+  height: 50%;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 10px 10px 0 0;
+}
+.text-card{
+  margin-left: 20px;
+  height: 50%;
+  width: 100%;
+}
+.img{
+  max-width: 100%;
+  height: auto;
+}
+.tag{
+  margin-top: 10px;
+  border-radius: 10px;
+  height: 10%;
+  width: 70px;
+  border: 3px solid rgb(102, 164, 218);
+}
+.tag p{
+  text-align: center;
+  line-height: 25px
+}
+.article-name{
+  padding-top: 1%;
+  width: 90%;
+  height: 20%;
+}
+.article-name p{
+  font-size: 40px;
+  font-family: 'Verdana', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+}
+.article-date{
+  padding-top: 1%;
+  height: 5%;
+}
+.article-date p {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  color: rgb(124, 124, 124);
+}
+.article-content{
+  padding-top: 3%;
+  height: 30%;
+  width: 95%;
+}
+.article-content p {
+  word-wrap: break-word;
+  font-family: 'Verdana', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+}
+.read-more{
+  margin-top: 2%;
+  height: 20%;
+}
+.read{
+  margin-top: 5px;
+  border-radius: 10px;
+  width: 100px;
+  height: 40px;
+  border: 2px solid rgb(135 179 217);
+}
+.search-box{
+  width: 100%;
+  height: 50px;
+  margin-top: 10px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.search{
+  width: 80%;
+  height: 100%;
+  margin-left: 10%;
+  display: flex;
+  align-items: center;
+}
+.fa-magnifying-glass{
+  font-size: 20px;
+}
+.search-input{
+  border: none;
+  margin-left: 10px;
+  width: 100%;
+  background: transparent;
+  outline: none;
+}
+.profile{
+  width: 100%;
+  height: 400px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+.headshot-box{
+  width: 60%;
+  height: 50%;
+  margin-left: 20%;
+}
+.headshot{
+  padding-top: 20px;
+  width: 100%;
+  height: 100%;
+}
+.name{
+  width: 100%;
+  height: 10%;
+}
+.name p{
+  text-align: center;
+  line-height: 40px;
+  font-weight: bold;
+  font-family: 'Verdana', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+  font-size: 20px;
+}
+.en-name{
+  width: 100%;
+  height: 10%;
+}
+.en-name p{
+  text-align: center;
+  line-height: 20px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 20px;
+}
+.location{
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+  display: flex;
+}
+.fa-location-dot{
+  margin-left: 5%;
+  text-align: center;
+  font-size: 30px;
+}
+.location p{
+  margin-left: 20%;
+  text-align: center;
+  line-height: 30px;
+  font-family: Comic Sans MS, Comic Sans, cursive;
+  font-size: 20px;
+}
+.github{
+  width: 40%;
+  height: 10%;
+  margin-left: 30%;
+}
+.fa-github{
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+.recent{
+  width: 100%;
+  height: 300px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+  margin-top: 20px;
+}
+.recent-word{
+  width: 100%;
+  height: 10%;
+  margin-bottom: 3%;
+}
+.recent-word p{
+  font-family: Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  padding-left: 1%;
+  padding-top: 1%;
+}
+.recent-article{
+  width: 86%;
+  height: 20%;
+  margin-left: 7%;
+  margin-bottom: 1%;
+  display: flex;
+}
+.recent-image{
+  width: 20%;
+  height: 90%;
+  border-radius: 10px;
+}
+.recent-box{
+  width: 60%;
+  margin-left: 5%;
+}
+.recent-box a{
+  font-family: 'Verdana', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+}
+.recent-box p{
+  font-family: Verdana, sans-serif;
+  font-size: 12px;
+  color: rgb(124, 124, 124);
+}
+
+@media screen and (max-width: 768px) {
+  .column{
+    display: none;
+  }
+  .main{
+    width: 80%;
+  }
+  .item{
+    width: 100%;
+    height: 100%;
+  }
+  .content{
+    margin-top: 5%;
+  }
+  .text-card{
+    width: 90%;
+  }
+  .article p{
+    font-size: 30px;
+  }
+  .article-date p {
+    font-size: 10px;
+  }
+  .article-content p{
+    font-size: 15px;
+  }
+  .read-more{
+    margin-top: 5%;
+  }
+}
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .column{
+    width: 30%;
+  }
+  .main{
+    width: 90%;
+  }
+  .item{
+    width: 70%;
+    height: 100%;
+  }
+  .content{
+    margin-top: 5%;
+  }
+}
