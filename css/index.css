@@ -316,6 +316,21 @@ body{
   color: rgb(124, 124, 124);
 }
 
+@media screen and (min-width: 769px) and (max-width: 1200px){
+  .column{
+    width: 30%;
+  }
+  .main{
+    width: 90%;
+  }
+  .item{
+    width: 70%;
+    height: 100%;
+  }
+  .content{
+    margin-top: 5%;
+  }
+}
 @media screen and (max-width: 768px) {
   .column{
     display: none;
@@ -343,21 +358,6 @@ body{
     font-size: 15px;
   }
   .read-more{
-    margin-top: 5%;
-  }
-}
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .column{
-    width: 30%;
-  }
-  .main{
-    width: 90%;
-  }
-  .item{
-    width: 70%;
-    height: 100%;
-  }
-  .content{
     margin-top: 5%;
   }
 }
