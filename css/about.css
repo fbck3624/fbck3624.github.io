@@ -1,0 +1,254 @@
+body {
+    width: 100%;
+}
+body:before,
+body:after {
+    content: "";
+    display: table;
+}
+body:after {
+    clear: both;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center; /* 將內容置於畫面的中間 */
+    min-height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.main {
+    width: 60%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+h1 {
+    text-align: center;
+    padding-top: 3%;
+}
+.about{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 2%;
+}
+.line{
+    background-color: rgb(17, 87, 207);
+    height: 10px;
+    width: 80%;
+    margin-left: 10%;
+}
+.page-about{
+    width: 80%;
+    height: 500px;
+    margin-left: 10%;
+    margin-top: 2%;
+    display: flex;
+}
+.sally-left{
+    width: 30%;
+    height: 100%;
+}
+.sally-right{
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 20%;
+}
+.headshot-box{
+    width: 300px;
+    height: 300px;
+    margin-left: 5%;
+}
+.headshot-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 100%;
+}
+.paragraph{
+    height: 60%;
+    width: 80%;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(54, 181, 255);
+}
+.paragraph-box{
+    width: 70%;
+    height: 80%;
+    margin-top: 3%;
+    margin-left: 5%;
+}
+.name{
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Noto Sans TC,Rubik,sans-serif;
+}
+li{
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .headshot-box{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .about{
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 2%;
+    }
+    .main{
+        width: 90%;
+    }
+    .line{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .box{
+        display: none;
+    }
+    .page-about {
+        width: 90%;
+        height: auto;
+        margin-bottom: 5%;
+        margin-left: 5%;
+        display: block;
+    }
+    .headshot-box img{
+        width: 200px;
+        height: 200px;
+    }
+    .sally-left{
+        height: auto;
+        width: auto;
+        margin-bottom: 1%;
+    }
+    .sally-right{
+        height: auto;
+        width: auto;
+        align-items: normal;
+    }
+    .name{
+        font-size: 25px;
+    }
+    li{
+        font-size: 18px;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+    .headshot-box{
+        width: 230px;
+        height: 230px;
+        margin: 0;
+    }
+    .main{
+        width: 90%;
+    }
+    .line{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .page-about {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1800px) {
+    .headshot-box{
+        width: 250px;
+        height: 250px;
+        margin: 0;
+    }
+    .main{
+        width: 70%;
+    }
+    .line{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .page-about {
+        width: 90%;
+        margin-left: 5%;
+    }
+}
