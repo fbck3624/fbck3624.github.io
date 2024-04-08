@@ -72,7 +72,7 @@ td {
     outline: 0;
     font-weight: inherit;
     font-style: inherit;
-    font-family: inherit;
+    font-family: Noto Sans TC,Rubik,sans-serif;
     font-size: 100%;
     vertical-align: baseline;
 }
@@ -92,7 +92,7 @@ body{
     margin-top: 1%;
 }
 .main {
-    width: 60%;
+    width: 50%;
     height: auto;
     border-radius: 10px;
     display: block;
@@ -134,8 +134,8 @@ h1 {
     height: 20%;
 }
 .headshot-box{
-    width: 300px;
-    height: 300px;
+    width: 250px;
+    height: 250px;
     margin-left: 5%;
 }
 .headshot-box img{
@@ -144,14 +144,15 @@ h1 {
     object-fit: cover; 
     border-radius: 100%;
 }
-.paragraph{
-    height: 60%;
+.paragraph-a{
+    height: auto;
     width: 80%;
+    margin-bottom: 3%;
     border-radius: 10px;
     background-color: white;
     border: 1px solid rgb(54, 181, 255);
 }
-.paragraph-box{
+.paragraph-a-box{
     width: 70%;
     height: 80%;
     margin-top: 3%;
@@ -162,16 +163,69 @@ h1 {
     font-weight: bold;
     font-family: Noto Sans TC,Rubik,sans-serif;
 }
-li{
+.paragraph-a-box li{
     font-size: 20px;
+}
+.paragraph-b{
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(54, 181, 255);
+    margin-top: 3%;
+}
+.paragraph-b p{
+    padding-top: 2%;
+    padding-left: 3%;
+    width: 94%;
+    font-size: 20px;
+}
+.paragraph-c{
+    height: auto;
+    width: 80%;
+    margin-left: 10%; 
+    margin-top: 3%;
+    display: flex;
+    gap: 24px;
+}
+.paragraph-c-column{
+    width: 50%;
+}
+.personality,.member,.skill,.expect{
+    height: auto;
+    width: 100%;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(54, 181, 255);
+    margin-bottom: 2%;
+}
+.personality p,.member p,.skill p,.expect p{
+    font-size: 20px;
+    width: 94%;
+    padding-left: 3%;
+    padding-top: 2%;
+}
+.small-title{
+    font-weight: bold;
+}
+.skill ul,.expect ul{
+    width: 90%;
+    margin-left: 5%;
+}
+.skill li,.expect li{
+    font-size: 20px;
+    padding-top: 2%;
 }
 
 @media screen and (max-width: 768px) {
     .headshot-box{
-        width: 90%;
         display: flex;
         justify-content: center;
         align-items: center;
+        width: 200px;
+        height: 200px;
+        margin: 0;
     }
     .about{
         font-weight: bold;
@@ -179,30 +233,29 @@ li{
         margin-bottom: 2%;
     }
     .main{
-        width: 90%;
+        width: 100%;
     }
     .line{
         width: 90%;
+        height: 5px;
         margin-left: 5%;
     }
     .box{
         display: none;
     }
     .page-about {
-        width: 90%;
+        width: 100%;
         height: auto;
         margin-bottom: 5%;
-        margin-left: 5%;
         display: block;
-    }
-    .headshot-box img{
-        width: 200px;
-        height: 200px;
+        margin-left: 0;
     }
     .sally-left{
         height: auto;
         width: auto;
-        margin-bottom: 1%;
+        margin-bottom: 5%;
+        display: flex;
+        justify-content: center;
     }
     .sally-right{
         height: auto;
@@ -210,16 +263,46 @@ li{
         align-items: normal;
     }
     .name{
-        font-size: 25px;
+        font-size: 20px;
     }
-    li{
-        font-size: 18px;
+    .paragraph-a{
+        width: 90%;
+    }
+    .paragraph-a-box li{
+        font-size: 15px;
+    }
+    .paragraph-b{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .paragraph-b p{
+        font-size: 15px;
+    }
+    .paragraph-c{
+        display: block;
+        width: 90%;
+        margin-left: 5%;
+        margin-top: 2%;
+    }
+    .paragraph-c-column{
+        width: 100%;
+    }
+    .personality p,.member p,.skill p,.expect p{
+        font-size: 15px;
+    }
+    .skill ul,.expect ul{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .skill li,.expect li{
+        font-size: 15px;
+        padding-top: 2%;
     }
 }
 @media screen and (min-width: 769px) and (max-width: 1400px) {
     .headshot-box{
-        width: 230px;
-        height: 230px;
+        width: 220px;
+        height: 220px;
         margin: 0;
     }
     .main{
@@ -230,6 +313,14 @@ li{
         margin-left: 5%;
     }
     .page-about {
+        width: 90%;
+        margin-left: 5%;
+    }
+    .paragraph-b{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .paragraph-c{
         width: 90%;
         margin-left: 5%;
     }
