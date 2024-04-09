@@ -167,8 +167,11 @@ body{
   font-family: 'Verdana', 'PingFang TC', 'Heiti TC', '微軟正黑體', sans-serif;
 }
 .read-more{
-  margin-top: 2%;
+  margin-top: 5%;
   height: 20%;
+  display: flex;
+  justify-content: end;
+  width: 90%;
 }
 .read{
   margin-top: 5px;
@@ -319,7 +322,7 @@ body{
 
 @media screen and (min-width: 1800px){
   .column{
-    width: 20%;
+    width: 25%;
   }
   .main{
     width: 60%;
@@ -374,6 +377,6 @@ body{
     font-size: 15px;
   }
   .read-more{
-    margin-top: 5%;
+    margin-top: 15%;
   }
 }
