@@ -1,0 +1,162 @@
+body {
+    width: 100%;
+}
+body:before,
+body:after {
+    content: "";
+    display: table;
+}
+body:after {
+    clear: both;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: Noto Sans TC,Rubik,sans-serif;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+body{
+    display: block;
+    margin: 0;
+    padding: 0;
+    flex-direction: column;
+    align-items: center; /* 將內容置於畫面的中間 */
+    min-height: 100vh;
+    background-image: url(images/background.jpg);
+    background-size: cover;
+}
+.content {
+    display: flex;
+    justify-content: center;
+    margin-top: 1%;
+}
+.main {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    display: block;
+}
+h1 {
+    text-align: center;
+    padding-top: 3%;
+}
+.experience{
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 2%;
+}
+.line{
+    background-color: rgb(17, 87, 207);
+    height: 10px;
+    width: 80%;
+    margin-left: 10%;
+}
+.page-about{
+    width: 70%;
+    height: auto;
+    margin-top: 2%;
+    display: flex;
+    margin-left: 15%;
+}
+.paragraph{
+    height: 300px;
+    width: 100%;
+    margin-bottom: 3%;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid rgb(54, 181, 255);
+}
+@media screen and (max-width: 768px) {
+    .main{
+        width: 100%;
+    }
+    .experience{
+        font-weight: bold;
+        font-size: 40px;
+        margin-bottom: 2%;
+    }
+    .line{
+        width: 90%;
+        height: 5px;
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1400px) {
+    .main{
+        width: 90%;
+    }
+    .line{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+@media screen and (min-width: 1400px) and (max-width: 1800px) {
+    .main{
+        width: 70%;
+    }
+    .line{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
